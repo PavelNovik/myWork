@@ -1,0 +1,25 @@
+{
+  "name": "mywork",
+  "version": "1.0.0",
+  "description": "My own projekt",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html --open --port 1116",
+    "build": "rm -rf build && parcel build src/index.html --out-dir build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavelNovik/myWork.git"
+  },
+  "author": "PawelNowik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavelNovik/myWork/issues"
+  },
+  "homepage": "https://github.com/PavelNovik/myWork#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.55.0"
+  }
+}
