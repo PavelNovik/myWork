@@ -1,10 +1,12 @@
 body {
   background-color: antiquewhite;
 }
+
 h1,
 h2 {
   color: red;
 }
+
 h3,
 h4 {
   color: brown;
@@ -14,20 +16,25 @@ header {
   display: flex;
   background-color: azure;
   justify-content: center;
+
   .header__nav {
     display: flex;
     justify-content: space-around;
     gap: 1.5rem;
     border: 1px black;
+
     &_menu {
       font-size: 2rem;
       list-style: none;
+
       &-active {
         text-shadow: 2px 1px 15px rgb(54, 53, 53);
       }
+
       &:hover {
         text-shadow: 2px 1px 15px rgb(54, 53, 53);
       }
+
       a {
         cursor: pointer;
         text-decoration: none;
