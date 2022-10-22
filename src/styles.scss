@@ -1,9 +1,32 @@
 body {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
-h1, h2 {
-    color: red;
+h1,
+h2 {
+  color: red;
 }
-h3, h4 {
-    color: brown;
+h3,
+h4 {
+  color: brown;
+}
+
+header {
+  display: flex;
+  background-color: azure;
+  justify-content: center;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.header__nav_menu {
+  font-size: 2rem;
+  list-style: none;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
