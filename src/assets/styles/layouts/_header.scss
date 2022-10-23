@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    background-color: azure;
+    justify-content: center;
+    height: 3rem;
+
+    @media ($tablet) {
+        height: 5rem;
+    }
+
+    .header__nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 7rem;
+        width: 120rem;
+        padding: 0 2rem;
+        border-bottom: 1px solid $grey;
+
+        &_menu {
+            font-size: 1.5rem;
+            list-style: none;
+            opacity: 0.4;
+
+            @media ($tablet) {
+                font-size: 2.5rem;
+            }
+
+            &-active {
+                // text-shadow: 2px 1px 15px rgb(54, 53, 53);
+
+                opacity: 1;
+            }
+
+            &:hover {
+                text-shadow: 2px 1px 15px rgb(54, 53, 53);
+                opacity: 0.8;
+
+            }
+
+            a {
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}

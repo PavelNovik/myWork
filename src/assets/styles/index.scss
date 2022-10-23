@@ -1,47 +1,32 @@
-@import './utils/index.scss';
+@import './utils';
+@import './layouts';
 
 body {
   background-color: antiquewhite;
 }
+
+.container {
+  width: 120rem;
+}
+
 
 h1,
 h2 {
   color: red;
 }
 
-h3,
-h4 {
-  color: brown;
+h1 {
+  @include h1($grey)
 }
 
-header {
-  display: flex;
-  background-color: azure;
-  justify-content: center;
+h2 {
+  @include h2 ($grey, left)
+}
 
-  .header__nav {
-    display: flex;
-    justify-content: space-around;
-    gap: 1.5rem;
-    border: 1px black;
+h3 {
+  @include h3($grey)
+}
 
-    &_menu {
-      font-size: 2rem;
-      list-style: none;
-
-      &-active {
-        text-shadow: 2px 1px 15px rgb(54, 53, 53);
-      }
-
-      &:hover {
-        text-shadow: 2px 1px 15px rgb(54, 53, 53);
-      }
-
-      a {
-        cursor: pointer;
-        text-decoration: none;
-        color: black;
-      }
-    }
-  }
+p {
+  @include p1($grey)
 }
