@@ -38,3 +38,14 @@ setTimeout(function () {
   });
   headerListItems.forEach((el) => (el.style.transition = '0s'));
 }, 9000);
+
+const openMenuBtn = document.querySelector('.open_menu');
+const img1 = document.querySelector('.img_1');
+const img2 = document.querySelector('.img_2');
+openMenuBtn.addEventListener('click', function (e) {
+  img1.classList.toggle('disaktive');
+  img2.classList.toggle('aktive');
+  if (img2.classList.value == 'img_2 aktive') {
+    e.target.innerText = 'Close Menu';
+  } else e.target.innerText = 'Open Menu';
+});
