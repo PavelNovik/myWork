@@ -3,7 +3,7 @@ console.log('what the next point?');
 
 const headerListItems = document.querySelectorAll('a');
 console.log(headerListItems);
-headerListItems.forEach((el) => (el.style.transition = '1s'));
+// headerListItems.forEach((el) => (el.style.transition = '1s'));
 
 function colorizeListItems(elements, color) {
   elements.forEach((element) => {
@@ -17,29 +17,30 @@ function colorizeListItems(elements, color) {
 // setTimeout(colorizeListItems(headerListItems, 'white'), 5000);
 // setTimeout(colorizeListItems(headerListItems, 'yellow'), 7000);
 
-setTimeout(function () {
-  headerListItems.forEach((el) => {
-    el.style.color = 'red';
-  });
-}, 3000);
-setTimeout(function () {
-  headerListItems.forEach((el) => {
-    el.style.color = 'white';
-  });
-}, 5000);
-setTimeout(function () {
-  headerListItems.forEach((el) => {
-    el.style.color = 'yellow';
-  });
-}, 7000);
-setTimeout(function () {
-  headerListItems.forEach((el) => {
-    el.style.color = 'black';
-  });
-  headerListItems.forEach((el) => (el.style.transition = '0s'));
-}, 9000);
+// setTimeout(function () {
+//   headerListItems.forEach((el) => {
+//     el.style.color = 'red';
+//   });
+// }, 3000);
+// setTimeout(function () {
+//   headerListItems.forEach((el) => {
+//     el.style.color = 'white';
+//   });
+// }, 5000);
+// setTimeout(function () {
+//   headerListItems.forEach((el) => {
+//     el.style.color = 'yellow';
+//   });
+// }, 7000);
+// setTimeout(function () {
+//   headerListItems.forEach((el) => {
+//     el.style.color = 'black';
+//   });
+//   headerListItems.forEach((el) => (el.style.transition = '0s'));
+// }, 9000);
 
-const openMenuBtn = document.querySelector('.open_menu');
+// const openMenuBtn = document.querySelector('.open_menu');
+const openMenuBtn = document.querySelector('.btn');
 const img1 = document.querySelector('.img_1');
 const img2 = document.querySelector('.img_2');
 openMenuBtn.addEventListener('click', function (e) {
