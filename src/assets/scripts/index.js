@@ -1,9 +1,9 @@
 console.log('what a beautiful world');
 console.log('what the next point?');
 
-const headerListItems = document.querySelectorAll('a');
+const headerListItems = document.querySelectorAll('li');
 console.log(headerListItems);
-// headerListItems.forEach((el) => (el.style.transition = '1s'));
+headerListItems.forEach((el) => (el.style.transition = '1s'));
 
 function colorizeListItems(elements, color) {
   elements.forEach((element) => {
@@ -17,27 +17,29 @@ function colorizeListItems(elements, color) {
 // setTimeout(colorizeListItems(headerListItems, 'white'), 5000);
 // setTimeout(colorizeListItems(headerListItems, 'yellow'), 7000);
 
-// setTimeout(function () {
-//   headerListItems.forEach((el) => {
-//     el.style.color = 'red';
-//   });
-// }, 3000);
-// setTimeout(function () {
-//   headerListItems.forEach((el) => {
-//     el.style.color = 'white';
-//   });
-// }, 5000);
-// setTimeout(function () {
-//   headerListItems.forEach((el) => {
-//     el.style.color = 'yellow';
-//   });
-// }, 7000);
-// setTimeout(function () {
-//   headerListItems.forEach((el) => {
-//     el.style.color = 'black';
-//   });
-//   headerListItems.forEach((el) => (el.style.transition = '0s'));
-// }, 9000);
+function colorize() {
+  setTimeout(function () {
+    headerListItems.forEach((el) => {
+      el.style.color = 'red';
+    });
+  }, 3000);
+  setTimeout(function () {
+    headerListItems.forEach((el) => {
+      el.style.color = 'white';
+    });
+  }, 5000);
+  setTimeout(function () {
+    headerListItems.forEach((el) => {
+      el.style.color = 'yellow';
+    });
+  }, 7000);
+  setTimeout(function () {
+    headerListItems.forEach((el) => {
+      el.style.color = 'white';
+    });
+    headerListItems.forEach((el) => (el.style.transition = '0s'));
+  }, 9000);
+}
 
 // const openMenuBtn = document.querySelector('.open_menu');
 const openMenuBtn = document.querySelector('.btn');
@@ -48,5 +50,6 @@ openMenuBtn.addEventListener('click', function (e) {
   img2.classList.toggle('aktive');
   if (img2.classList.value == 'img_2 aktive') {
     e.target.innerText = 'Close Menu';
+    colorize();
   } else e.target.innerText = 'Open Menu';
 });
