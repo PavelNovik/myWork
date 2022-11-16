@@ -1,6 +1,7 @@
 header {
     display: flex;
-    background-color: azure;
+    // background-color: azure;
+    background-color: rgb(255, 195, 65);
     justify-content: center;
     height: 3rem;
 
@@ -27,7 +28,7 @@ header {
             }
 
             &-active {
-                // text-shadow: 2px 1px 15px rgb(54, 53, 53);
+                text-shadow: -5px -5px 15px white, 1px 1px 5px red, 5px 2px 15px white;
 
                 opacity: 1;
             }

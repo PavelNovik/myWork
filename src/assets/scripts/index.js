@@ -50,6 +50,19 @@ openMenuBtn.addEventListener('click', function (e) {
   img2.classList.toggle('aktive');
   if (img2.classList.value == 'img_2 aktive') {
     e.target.innerText = 'Close Menu';
-    colorize();
+    // colorize();
   } else e.target.innerText = 'Open Menu';
 });
+
+// active nav link after click
+
+headerListItems.forEach((el, i, elements) => {
+  el.addEventListener('click', function (e) {
+    const btn = e.target.parentElement;
+    elements.forEach((el) => el.classList.remove('header__nav_menu-active'));
+    btn.classList.add('header__nav_menu-active');
+    // console.log(btn);
+  });
+});
+
+// function activeNavMenuToggle() {}
