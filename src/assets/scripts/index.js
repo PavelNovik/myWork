@@ -66,3 +66,12 @@ headerListItems.forEach((el, i, elements) => {
 });
 
 // function activeNavMenuToggle() {}
+const formCodepen = document.querySelector('.form__container');
+const galleryCodepen = document.querySelector('.gallery');
+formCodepen.style.transition = '.5s';
+galleryCodepen.style.transition = '.5s';
+const codepenBtn = document.querySelector('.codepen');
+codepenBtn.addEventListener('click', function () {
+  formCodepen.classList.toggle('codepen-visible');
+  galleryCodepen.classList.toggle('codepen-visible');
+});
